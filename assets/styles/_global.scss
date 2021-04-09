@@ -43,7 +43,20 @@ body {
 
   .section2 {
     height: 680px;
-    border: 1px solid red;
+    
+    .white-space {
+      min-height: 680px;
+      width: 20%;
+      float: left;
+      background-color: #c0c0c0;
+    }
+
+    .article {
+      min-height: 680px;
+      width: 80%;
+      float: left;
+      background-color: #a9a9a9;
+    }
   }
 
   .section3 {
