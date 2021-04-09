@@ -1,14 +1,12 @@
 body {
-	height: auto;
+  height: auto;
+  margin: 0;
 }
 
 .wrapper {
-  height: auto;
-  width: auto;
-
   .sidenav {
     // temporary height, just to show the grid
-    min-height: 2000px;
+    min-height: 2440px;
     width: 5%;
     float: left;
     background-color: #dcdcdc;
@@ -16,7 +14,7 @@ body {
 
   .content {
     h2 {
-      align-content: center;;
+      align-content: center;
     }
     width: 95%;
     float: left;
@@ -38,12 +36,11 @@ body {
       float: left;
       background-color: #696969;
     }
-
   }
 
   .section2 {
     height: 680px;
-    
+
     .white-space {
       min-height: 680px;
       width: 20%;
@@ -61,11 +58,11 @@ body {
 
   .section3 {
     height: 200px;
-    border: 1px solid green;
+    background-color: #696969;
   }
 
   .section4 {
     height: 680px;
-    border: 1px solid red;
+    background-color: #808080;
   }
 }
