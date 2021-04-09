@@ -1,8 +1,68 @@
-h1 {
-  font-family: $font;
-  font-size: 1rem;
-  color: $body-color;
-  line-height: 1;
+body {
+  height: auto;
   margin: 0;
-  margin-bottom: 1rem;
+}
+
+.wrapper {
+  .sidenav {
+    // temporary height, just to show the grid
+    min-height: 2440px;
+    width: 5%;
+    float: left;
+    background-color: #dcdcdc;
+  }
+
+  .content {
+    h2 {
+      align-content: center;
+    }
+    width: 95%;
+    float: left;
+  }
+
+  .section1 {
+    min-height: 680px;
+
+    .panorama {
+      min-height: 680px;
+      width: 75%;
+      float: left;
+      background-color: #808080;
+    }
+
+    .destination {
+      min-height: 680px;
+      width: 25%;
+      float: left;
+      background-color: #696969;
+    }
+  }
+
+  .section2 {
+    height: 680px;
+
+    .white-space {
+      min-height: 680px;
+      width: 20%;
+      float: left;
+      background-color: #c0c0c0;
+    }
+
+    .article {
+      min-height: 680px;
+      width: 80%;
+      float: left;
+      background-color: #a9a9a9;
+    }
+  }
+
+  .section3 {
+    height: 200px;
+    background-color: #696969;
+  }
+
+  .section4 {
+    height: 680px;
+    background-color: #808080;
+  }
 }
