@@ -1,8 +1,15 @@
 // Stores re-useable variables
 
-$font: "Lato", Arial, Helvetica, sans-serif;
+// color variables
 $body-color: blue;
 $border-color: red;
 $nav-text-color: black;
 $nav-border-color: #a9a9a9;
 $panorama-text-color: #ffffff;
+
+// font-family
+$destination-description: Arial, sans-serif;
+$destination-title: "Times New Roman", serif;
+$destination-footer-font: Garamond, serif;
+$font: "Lato", Arial, Helvetica, sans-serif;
+$navbar-font: Verdana, sans-serif;
