@@ -20,6 +20,7 @@ body {
 
     .nav {
       margin: 0px 0px 0px 30px;
+
       li {
         list-style: none;
         margin: 6px 20px;
@@ -29,16 +30,23 @@ body {
         a {
           text-decoration: none;
           color: $nav-text-color;
+          font-family: $navbar-font;
         }
+
         &:hover {
-          border-top: solid 2px #ea3c53;
+          border-top: solid 2.5px #ea3c53;
         }
       }
+
+      .active {
+        border-top: solid 2.5px #ea3c53;
+      }
+
       .web-logo {
         float: right;
         transform: rotate(90deg);
         img {
-          margin: 20px;
+          margin: 36px;
         }
       }
     }
@@ -57,16 +65,146 @@ body {
 
     .panorama {
       min-height: 680px;
+      position: relative;
       width: 70%;
       float: left;
-      background-color: #808080;
+      margin-top: 15px;
+      background-image: url("/uploads/coast.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      .panorama-context {
+        margin: 0px 30px;
+        top: 62%;
+        position: absolute;
+
+        .title-collider {
+          position: relative;
+          h1 {
+            color: $panorama-text-color;
+            font-weight: normal;
+            margin: 0px 15px;
+            font-size: 75px;
+          }
+
+          h4 {
+            color: $panorama-text-color;
+            opacity: 0.7;
+            margin: 22px 22px 0px;
+            font-style: italic;
+          }
+
+          .rectangle {
+            background-color: #ffffff;
+            opacity: 0.5;
+            height: 50px;
+            position: absolute;
+            width: 100%;
+            top: 65%;
+          }
+        }
+
+        .social-media {
+          display: flex;
+          height: 100%;
+          margin: 20px 5px;
+          padding: 35px 0px;
+
+          .facebook {
+            float: left;
+            margin: 0px 15px;
+
+            &:hover {
+              transform: scale(1.2);
+            }
+          }
+
+          .instagram {
+            float: left;
+            margin: 0px 15px;
+
+            &:hover {
+              transform: scale(1.2);
+            }
+          }
+
+          .twitter {
+            float: left;
+            margin: 0px 15px;
+
+            &:hover {
+              transform: scale(1.5);
+            }
+          }
+        }
+      }
     }
 
     .destination {
-      min-height: 680px;
+      min-height: 695px;
       width: 30%;
+      position: relative;
       float: left;
-      background-color: #696969;
+
+      .destination-container {
+        margin: 15px 70px;
+        position: absolute;
+
+        .destination-box {
+          transition: box-shadow 0.3s;
+          margin: 50px 20px;
+          padding: 15px;
+          .destination-header {
+            height: 20px;
+            .destination-title {
+              width: 50%;
+              float: left;
+              h3 {
+                margin: 0px;
+                font-family: $destination-title;
+              }
+            }
+            .destination-icon {
+              width: 40%;
+              float: left;
+              text-align: right;
+              padding-right: 5px;
+            }
+          }
+
+          .destination-description {
+            p {
+              font-size: 15px;
+              opacity: 0.5;
+              font-family: $destination-description;
+            }
+          }
+
+          .destination-footer {
+            height: 40px;
+            border-top: solid 3px #f5f5f5;
+            p {
+              color: #c4c4c4;
+              font-size: 14px;
+              font-style: italic;
+              margin: 10px 0px;
+              font-family: $destination-footer-font;
+            }
+            .footer-context {
+              width: 50%;
+              float: left;
+            }
+            .footer-date {
+              width: 50%;
+              float: left;
+              text-align: right;
+            }
+          }
+          &:hover {
+            box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+          }
+        }
+      }
     }
   }
 
