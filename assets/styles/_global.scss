@@ -38,7 +38,7 @@ body {
         float: right;
         transform: rotate(90deg);
         img {
-          margin: 20px;
+          margin: 36px;
         }
       }
     }
@@ -57,16 +57,81 @@ body {
 
     .panorama {
       min-height: 680px;
+      position: relative;
       width: 70%;
       float: left;
-      background-color: #808080;
+      margin-top: 15px;
+      background-image: url("/uploads/coast.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      .panorama-context {
+        margin: 0px 30px;
+        top: 65%;
+        position: absolute;
+
+        .title-collider {
+          position: relative;
+          h1 {
+            color: $panorama-text-color;
+            margin: 0px 15px;
+            font-size: 75px;
+          }
+
+          h4 {
+            color: $panorama-text-color;
+            margin: 22px 22px 0px;
+          }
+
+          .rectangle {
+            background-color: #ffffff;
+            opacity: 0.5;
+            height: 50px;
+            position: absolute;
+            width: 100%;
+            top: 65%;
+          }
+        }
+
+        .social-media {
+          display: flex;
+          height: 100%;
+          margin: 50px 5px;
+
+          .facebook {
+            float: left;
+            margin: 0px 15px;
+
+            &:hover {
+              transform: scale(1.2);
+            }
+          }
+
+          .instagram {
+            float: left;
+            margin: 0px 15px;
+
+            &:hover {
+              transform: scale(1.2);
+            }
+          }
+
+          .twitter {
+            float: left;
+            margin: 0px 15px;
+
+            &:hover {
+              transform: scale(1.5);
+            }
+          }
+        }
+      }
     }
 
     .destination {
-      min-height: 680px;
+      min-height: 695px;
       width: 30%;
       float: left;
-      background-color: #696969;
     }
   }
 
