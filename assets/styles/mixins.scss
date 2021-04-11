@@ -1,0 +1,10 @@
+// re-useable styling with params
+@mixin grid-box($float-values, $width-values) {
+  float: $float-values;
+  width: $width-values;
+}
+
+@mixin box-position($top-values, $left-values) {
+  top: $top-values;
+  left: $left-values;
+}

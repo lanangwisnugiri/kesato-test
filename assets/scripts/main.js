@@ -25,7 +25,7 @@ const displayScrollElement = (element) => {
   element.classList.add("scrolled");
 };
 
-// remove the additional class if the screen is at the very top
+// remove the additional class if the elements is not on screenheight
 const hideScrollElement = (element) => {
   element.classList.remove("scrolled");
 };
