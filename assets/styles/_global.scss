@@ -74,6 +74,15 @@ body {
       background-repeat: no-repeat;
       background-size: cover;
 
+      .top-middle-stick {
+        height: 76px;
+        width: 2px;
+        background-color: #ffffff;
+        position: absolute;
+        top: 89%;
+        left: 60%;
+      }
+
       .panorama-context {
         margin: 0px 30px;
         top: 62%;
@@ -223,6 +232,15 @@ body {
       right: 0;
       top: 35%;
       width: 56%;
+    }
+
+    .bottom-middle-stick {
+      height: 76px;
+      width: 2px;
+      background-color: #d5d5d5;
+      top: 2%;
+      position: absolute;
+      left: 42%;
     }
 
     .article {
