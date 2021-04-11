@@ -34,12 +34,12 @@ body {
         }
 
         &:hover {
-          border-top: solid 2.5px #ea3c53;
+          border-top: solid 2.5px #e77483;
         }
       }
 
       .active {
-        border-top: solid 2.5px #ea3c53;
+        border-top: solid 2.5px #e77483;
       }
 
       .web-logo {
@@ -73,6 +73,15 @@ body {
       background-image: url("/uploads/panorama.jpg");
       background-repeat: no-repeat;
       background-size: cover;
+
+      .top-middle-stick {
+        height: 76px;
+        width: 2px;
+        background-color: #ffffff;
+        position: absolute;
+        top: 89%;
+        left: 60%;
+      }
 
       .panorama-context {
         margin: 0px 30px;
@@ -225,6 +234,15 @@ body {
       width: 56%;
     }
 
+    .bottom-middle-stick {
+      height: 76px;
+      width: 2px;
+      background-color: #d5d5d5;
+      top: 2%;
+      position: absolute;
+      left: 42%;
+    }
+
     .article {
       position: absolute;
       padding: 0px 25px;
@@ -306,7 +324,7 @@ body {
     .quotes {
       position: absolute;
       height: 85px;
-      border-left: solid 2.5px #ea3c53;
+      border-left: solid 4px #e77483;
       width: 64%;
       left: 12%;
 
@@ -323,6 +341,134 @@ body {
 
   .section4 {
     height: 680px;
-    background-color: #808080;
+    border-left: solid 3px #f5f5f5;
+    position: relative;
+
+    .carousel-image {
+      position: absolute;
+      background-image: url("/uploads/forest.jpg");
+      background-size: cover;
+      height: 500px;
+      width: 66%;
+      top: 5%;
+    }
+
+    .location-overlay {
+      position: absolute;
+      height: 335px;
+      background-color: #ffffff;
+      width: 50%;
+      top: 45%;
+      right: 0;
+
+      .location-left-container {
+        float: left;
+        width: 50%;
+        padding: 45px 0px 20px 50px;
+
+        .location-title {
+          h1 {
+            font-weight: normal;
+            margin: 5px 0px;
+            font-size: 75px;
+          }
+        }
+
+        .location-subtitle {
+          height: 25px;
+
+          p {
+            margin: 5px 0px;
+          }
+
+          .location-suburb {
+            float: left;
+            width: 30%;
+            p {
+              font-weight: bold;
+            }
+          }
+          .journey-length {
+            float: left;
+            width: 65%;
+            p {
+              color: #c4c4c4;
+              font-size: 14px;
+              font-style: italic;
+              font-family: $destination-footer-font;
+            }
+          }
+        }
+
+        .location-description {
+          width: 70%;
+          p {
+            font-style: italic;
+            opacity: 0.3;
+            font-size: 20px;
+            margin: 25px 0px;
+          }
+        }
+      }
+
+      .location-right-container {
+        position: relative;
+        padding: 45px 0px 20px 0px;
+        float: left;
+        width: 40%;
+        height: 200px;
+
+        .location-buttons {
+          position: absolute;
+          top: 58%;
+          left: 30%;
+
+          .right-button {
+            margin: 0px 7px;
+            float: left;
+            width: 50%;
+            box-sizing: border-box;
+            display: block;
+            width: 45px;
+            height: 45px;
+            border: 2.5px solid #f5f5f5;
+            border-radius: 50%;
+            text-align: center;
+            transition: all 0.3s ease;
+
+            &:hover {
+              border: solid 2.5px #e77483;
+            }
+
+            .right-icon {
+              position: absolute;
+              top: 26%;
+              left: 69%;
+
+              img {
+                width: 50%;
+                height: 50%;
+              }
+            }
+          }
+          .left-button {
+            @extend .right-button;
+
+            .left-icon {
+              transform-origin: left top;
+              transform: rotate(-180deg) translateX(-100%);
+              position: absolute;
+              top: 72%;
+              left: 17%;
+
+              img {
+                width: 50%;
+                height: 50%;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
