@@ -4,6 +4,15 @@ body {
 }
 
 .wrapper {
+  .js-scroll {
+    opacity: 0;
+    transition: opacity 500ms;
+  }
+
+  .js-scroll.scrolled {
+    opacity: 1;
+  }
+
   .nav-grid {
     width: 7%;
     float: left;
