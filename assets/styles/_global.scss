@@ -1,3 +1,5 @@
+@import "mixins";
+
 body {
   height: auto;
   margin: 0;
@@ -14,8 +16,7 @@ body {
   }
 
   .nav-grid {
-    width: 7%;
-    float: left;
+    @include grid-box(left, 7%);
     background-color: #ffffff;
     min-height: auto;
   }
@@ -65,8 +66,7 @@ body {
     h2 {
       align-content: center;
     }
-    width: 93%;
-    float: left;
+    @include grid-box(left, 93%);
   }
 
   .section1 {
@@ -74,22 +74,20 @@ body {
     border-left: solid 3px #f5f5f5;
 
     .panorama {
+      @include grid-box(left, 70%);
       min-height: 680px;
       position: relative;
-      width: 70%;
-      float: left;
       margin-top: 15px;
       background-image: url("/uploads/panorama.jpg");
       background-repeat: no-repeat;
       background-size: cover;
 
       .top-middle-stick {
+        @include box-position(89%, 60%);
         height: 76px;
         width: 2px;
         background-color: #ffffff;
         position: absolute;
-        top: 89%;
-        left: 60%;
       }
 
       .panorama-context {
@@ -161,10 +159,9 @@ body {
     }
 
     .destination {
+      @include grid-box(left, 30%);
       min-height: 695px;
-      width: 30%;
       position: relative;
-      float: left;
 
       .destination-container {
         margin: 15px 70px;
@@ -177,16 +174,14 @@ body {
           .destination-header {
             height: 20px;
             .destination-title {
-              width: 50%;
-              float: left;
+              @include grid-box(left, 50%);
               h3 {
                 margin: 0px;
                 font-family: $destination-title;
               }
             }
             .destination-icon {
-              width: 40%;
-              float: left;
+              @include grid-box(left, 40%);
               text-align: right;
               padding-right: 5px;
             }
@@ -211,12 +206,10 @@ body {
               font-family: $destination-footer-font;
             }
             .footer-context {
-              width: 50%;
-              float: left;
+              @include grid-box(left, 50%);
             }
             .footer-date {
-              width: 50%;
-              float: left;
+              @include grid-box(left, 50%);
               text-align: right;
             }
           }
@@ -244,20 +237,18 @@ body {
     }
 
     .bottom-middle-stick {
+      @include box-position(2%, 42%);
       height: 76px;
       width: 2px;
       background-color: #d5d5d5;
-      top: 2%;
       position: absolute;
-      left: 42%;
     }
 
     .article {
+      @include box-position(15%, 20%);
       position: absolute;
       padding: 0px 25px;
       width: 26.5%;
-      top: 15%;
-      left: 20%;
       background-color: #ffffff;
 
       .article-date {
@@ -295,15 +286,13 @@ body {
       transform: rotate(-90deg) translateX(-100%);
 
       .bottom-carousel-text {
-        float: left;
-        width: 50%;
+        @include grid-box(left, 50%);
         p {
           font-weight: bold;
         }
       }
       .top-carousel-text {
-        float: left;
-        width: 50%;
+        @include grid-box(left, 50%);
         text-align: right;
         p {
           color: #c4c4c4;
@@ -371,8 +360,7 @@ body {
       right: 0;
 
       .location-left-container {
-        float: left;
-        width: 50%;
+        @include grid-box(left, 50%);
         padding: 45px 0px 20px 50px;
 
         .location-title {
@@ -391,15 +379,13 @@ body {
           }
 
           .location-suburb {
-            float: left;
-            width: 30%;
+            @include grid-box(left, 30%);
             p {
               font-weight: bold;
             }
           }
           .journey-length {
-            float: left;
-            width: 65%;
+            @include grid-box(left, 65%);
             p {
               color: #c4c4c4;
               font-size: 14px;
@@ -421,21 +407,18 @@ body {
       }
 
       .location-right-container {
+        @include grid-box(left, 40%);
         position: relative;
         padding: 45px 0px 20px 0px;
-        float: left;
-        width: 40%;
         height: 200px;
 
         .location-buttons {
+          @include box-position(58%, 30%);
           position: absolute;
-          top: 58%;
-          left: 30%;
 
           .right-button {
+            @include grid-box(left, 50%);
             margin: 0px 7px;
-            float: left;
-            width: 50%;
             box-sizing: border-box;
             display: block;
             width: 45px;
@@ -450,9 +433,8 @@ body {
             }
 
             .right-icon {
+              @include box-position(26%, 69%);
               position: absolute;
-              top: 26%;
-              left: 69%;
 
               img {
                 width: 50%;
@@ -464,11 +446,10 @@ body {
             @extend .right-button;
 
             .left-icon {
+              @include box-position(72%, 17%);
               transform-origin: left top;
               transform: rotate(-180deg) translateX(-100%);
               position: absolute;
-              top: 72%;
-              left: 17%;
 
               img {
                 width: 50%;
